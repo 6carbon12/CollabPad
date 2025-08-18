@@ -19,4 +19,23 @@
       transform: translateY(0%);
     }
   }
+
+  --animate-toastIn: toastIn 1s ease-in-out;
+
+  @keyframes toastIn {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    60% {
+      transform: translateY(10%);
+      opacity: 1;
+    }
+    80% {
+      transform: translateY(-5%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
 }
