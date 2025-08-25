@@ -1,5 +1,8 @@
-import express from 'express'
+import { Router } from "express";
+import registerRouter from "./register.js";
 
-const router = express.Router();
+const api = Router();
 
-export default router;
+api.use("/register", registerRouter);
+
+export default api;

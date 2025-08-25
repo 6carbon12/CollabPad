@@ -11,3 +11,6 @@ build/
 # Envirment varibales
 .env
 .env.*
+
+# certs and keys
+*.pem
