@@ -14,7 +14,6 @@ export default function ToastProvider({ children }: { children: ReactNode }) {
 
   function addToast(message: string, type: 'GOOD' | 'BAD') {
     const id = crypto.randomUUID() // Date.now() breaks if a pair of same second toasts are called twice in 3s
-    console.log(id)
     setToasts((t) => [...t, { id, message, type, removing: false }])
     setTimeout(() => {
       setToasts((pt) =>
